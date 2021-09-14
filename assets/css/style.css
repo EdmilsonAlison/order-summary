@@ -1,0 +1,146 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --gap: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+a {
+  font-size: 1.3rem;
+}
+
+.main-bg {
+  background-image: url(/assets/img/pattern-background-desktop.svg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.main-content {
+  max-width: 144rem;
+  margin: 0 auto;
+  gap: 4rem var(--gap);
+}
+
+.section {
+  height: 100vh;
+}
+
+.main-order-summary {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.main-order-summary h1 {
+  text-align: center;
+}
+
+.main-order-summary .main-box {
+  width: 50vh;
+  height: 80vh;
+  display: flex;
+  flex-flow: column nowrap;
+  border-radius: 2rem;
+}
+
+.main-box img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.main-box-content {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+}
+
+.main-box-content p {
+  color: var(--desaturated-blue);
+  text-align: center;
+}
+
+.main-box .plan-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-pale-blue);
+}
+
+.main-button{
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-button .payment{
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  width: 80%;
+  height: 4.5vh;
+  border-radius: 1rem;
+  background-color: var(--bright-blue);
+  color: #fff;
+  border: none;
+  transition: all 300ms ease-in-out;
+}
+
+.main-button .payment:hover{
+  background-color:rgba(29, 240, 187, 0.856);
+  border: 0.1rem solid black;
+}
+
+.main-button .cancel{
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  width: 80%;
+  height: 4.5vh;
+  border-radius: 1rem;
+  background-color: var(--very-pale-blue);
+  color: var(--bright-blue);
+  border: none;
+}
+
+.main-button .cancel:hover{
+  color: crimson;
+}
