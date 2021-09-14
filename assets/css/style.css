@@ -98,11 +98,21 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 80%;
+  height: 9vh;
   margin: 0 auto;
   text-align: center;
   justify-content: center;
   align-items: center;
   background-color: var(--very-pale-blue);
+  border-radius: 1rem;
+}
+
+.plan-content p, .plan-content h2{
+  text-align: left;
+}
+
+.plan-content img{
+  padding-left: 4rem;
 }
 
 .main-button{
