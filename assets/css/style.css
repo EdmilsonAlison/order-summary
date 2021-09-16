@@ -112,7 +112,7 @@ a {
 }
 
 .plan-content img{
-  padding-left: 4rem;
+  padding-left: 2rem;
 }
 
 .main-button{
@@ -153,4 +153,14 @@ a {
 
 .main-button .cancel:hover{
   color: crimson;
+}
+
+@media (max-width:40rem) {
+  .main-order-summary .main-box {
+    width: 50vh;
+    height: 80vh;
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 2rem;
+  }
 }
